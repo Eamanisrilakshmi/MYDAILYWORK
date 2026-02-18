@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#fff,#fed7ad);
+}
+
+/* NAV */
+nav{
+    height:70px;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+}
+
+.links a{
+    margin-left:25px;
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+.logo span{
+    font-size:1.8rem;
+    color:rgb(109,67,0);
+}
+
+/* HERO */
+.hero{
+    padding:40px 0;
+}
+
+.main-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+}
+
+.image img{
+    width:400px;
+    margin-left:50px;
+    /* background: transparent;
+    border-radius: 12px;
+    mix-blend-mode: multiply;
+    filter: brightness(1.05) contrast(1.1);
+    margin-left:50px; */
+}
+
+.content{
+    width:50%;
+}
+
+.content h1 span{
+    color:rgb(109,67,0);
+}
+
+.typewriter{
+    font-size:1.6rem;
+    margin:5px 0;
+}
+
+.content p{
+    margin:10px 0;
+}
+
+.social-links i{
+    margin-right:10px;
+    font-size:1.4rem;
+    color:rgb(109,67,0);
+}
+
+button{
+    margin-top:10px;
+    padding:10px 25px;
+    background:rgb(109,67,0);
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+/* COMMON SECTIONS */
+.section{
+    padding:30px 12%;
+}
+
+.section h2{
+    margin-bottom:10px;
+}
+
+.section span{
+    color:rgb(109,67,0);
+}
+
+.section p, .section li{
+    line-height:1.6;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+    .main-container{
+        flex-direction:column;
+        text-align:center;
+    }
+    .content{
+        width:100%;
+    }
+}
+/* ================= CERTIFICATES ================= */
+
+.cert-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cert-card{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.cert-card:hover{
+    transform: translateY(-5px);
+}
+
+.cert-card img{
+    width: 140px;          /* 👈 BIG but controlled */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.cert-card p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+    .cert-grid{
+        grid-template-columns: 1fr;
+    }
+}
+  /* ================= SKILLS ================= */
+
+.skills-section{
+    padding: 50px 12%;
+}
+
+.skills-container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* LEFT */
+.skills-left{
+    width: 50%;
+}
+
+.skill{
+    margin-bottom: 20px;
+}
+
+.skill p{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.bar{
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.bar span{
+    display: block;
+    height: 8px;
+    background: rgb(109,67,0);
+    border-radius: 5px;
+}
+
+/* RIGHT */
+.skills-right{
+    width: 50%;
+}
+
+.skills-right img{
+    width: 250px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.skills-right p{
+    margin-bottom: 10px;
+}
+
+.skills-right ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-right li{
+    margin-bottom: 6px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+    .skills-container{
+        flex-direction: column;
+    }
+    .skills-left,.skills-right{
+        width: 100%;
+    }
+    .skills-right img{
+        margin: auto;
+    }
+}
+/* SKILLS RIGHT IMAGE FIX */
+
+.skills-right img{
+    width: 180px;              /* 👈 small & clean */
+    height: auto;
+    background: transparent;   /* no background */
+    border: none;              /* no borders */
+    box-shadow: none;          /* no card effect */
+    display: block;
+    margin-bottom: 15px;
+}
+.skills-right img{
+    width: 170px;
+    background: transparent;
+    border-radius: 12px;
+    mix-blend-mode: multiply;
+    filter: brightness(1.05) contrast(1.1);
+}
+
+/* CONTACT */
+.contact-section {
+  padding: 60px;
+  text-align: center;
+}
+
+form {
+  width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+}
+
+button {
+  padding: 12px;
+  background: purple;
+  color: white;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: purple;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+}
